@@ -44,7 +44,7 @@ public class BookRepository {
 			String query = "DELETE FROM library_book WHERE id = ?";
 			PreparedStatement st = conn.prepareStatement(query);
 			st.setString(1, bookId);
-			st.executeQuery();
+			st.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
