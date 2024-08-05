@@ -10,7 +10,14 @@ public class Book {
 
 	}
 
+	public Book(String title, String author, boolean isIssued) {
+		this.title = title;
+		this.author = author;
+		this.isIssued = isIssued;
+	}
+	
 	public Book(String id, String title, String author, boolean isIssued) {
+		super();
 		this.id = id;
 		this.title = title;
 		this.author = author;
